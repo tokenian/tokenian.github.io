@@ -3,6 +3,12 @@ layout: page
 description: "诗歌与哲学，编程与生活，这是一个混乱体"
 ---
 
+<style type="text/css">
+    header.intro-header{
+        height: 800px;
+    }
+</style>
+
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
