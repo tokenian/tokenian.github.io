@@ -1,8 +1,8 @@
 ---
 title: "价格歧视"
 subtitle: "资本永不眠，压榨消费者的剩余价值"
-layout: post
-author: "tokenian"
+# layout: post
+# author: "tokenian"
 # header-style: text
 header-img: "img/home-bg-f.jpg"
 tags:
