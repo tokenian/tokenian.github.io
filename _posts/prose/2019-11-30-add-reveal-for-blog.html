@@ -1,0 +1,78 @@
+---
+title: "为博客添加幻灯片"
+subtitle: "新的表达形式可以让人愉悦"
+layout: reveal
+author: "tokenian"
+# header-style: text
+# header-bg: "#42affa"
+theme: sky
+comment: true
+sns: true
+tags:
+  - art
+  - drama
+  - introduction
+---
+
+<section data-background="#00CC99">
+    <h5>
+      经过了一个下午的努力，给博客添加了幻灯片功能。  
+    </h5>
+    <small>
+      <span>
+          <a href="https://github.com/hakimel/reveal.js" target="_blank">Reveal.js</a>
+      </span>
+      是一个功能非常强大、优雅的幻灯片呈现框架。它支持markdown,使用css3动画做特效。
+    </small>
+    <small>
+      虽然功能没有PPT强大，但是作为一个轻量替代品足够了。感谢它的作者们。我把它的使用介绍页面也放在了博客内。
+      <a href="/slides/demo.html#/" target="_blank">访问地址</a>
+    </small>
+</section>
+
+<section data-background-transition="zoom">
+  <p>页面的YAML front matter</p>
+  <pre>
+    <code class="hljs" data-trim>
+        ---
+        title: "为博客添加幻灯片"
+        subtitle: "新的表达形式可以让人愉悦"
+        layout: reveal
+        author: "tokenian"
+        # header-bg: "#42affa"
+        theme: sky
+        comment: true
+        sns: true
+        tags:
+          - art
+          - drama
+          - introduction
+        ---
+    </code>
+  </pre>
+</section>
+  
+<section>
+    <p>layout设置为reveal才起效</p>
+    <small>theme对应reveal.js的各个主题</small>
+    <small>comment是否展示评论，sns展示社交链接。不填写则默认没有</small>
+    <small>header-bg第一页背景色，或者照片</small>
+</section>
+
+<section>
+ <p>页面需要的html代码</p>
+ <pre>
+   <code class="hljs html" style="word-wrap: break-word;">
+      &lt;section data-background="#00CC99"&gt;
+          &lt;h5&gt;
+            经过了一个下午的努力，给博客添加了幻灯片功能。  
+          &lt;/h5&gt;
+      &lt;/section&gt;
+   </code>
+ </pre>
+</section>
+
+<section>
+  <p>我的博客骨架是使用的<a href="https://huangxuan.me/" target="_blank">Hux Blog</a></p>
+  <small>但这个reveal.js的集成却是我自己一人费心完成的，所以在不久的将来我的页面底部将改为自己的。我依然感谢所有的贡献者，也愿意别人使用我的这种改良。</small>
+</section>

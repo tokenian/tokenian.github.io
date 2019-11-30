@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head_reveal.html %}
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+    <div class="reveal">
+            <div class="slides">
+                <section data-background="{{page.header-bg}}">
+                        <h2>{{page.title}}</h3>
+                        <h5>{{page.subtitle}}</h5>
+                        <p>
+                            <small>Created by <a href="{{site.url}}">{{page.author}}</a></small>
+                        </p>
+                </section>
+
+                {{ content }}
+
+                {% if page.comment %}
+                <section>
+                    <!-- Featured Tags -->    
+                    {% if site.featured-tags %}
+                        <h5><a href="{{'/archive/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
+                        <div class="tags">
+                            {% capture tags %}
+                            {% comment %}
+                                there must be no space between for and if otherwise this tricky sort won't work.
+                                url_encode/decode is for escaping otherwise extra <a> will get generated 
+                                but it will break sort...
+                            {% endcomment %}
+                            {% for tag in site.tags %}{% if tag[1].size > site.featured-condition-size %}
+                                    <a data-sort="{{ site.posts.size | minus: tag[1].size | prepend: '0000' | slice: -4, 4 }}" 
+                                        href="{{ site.baseurl }}/archive/?tag={{ tag[0] | url_encode }}"
+                                        title="{{ tag[0] }}"
+                                        rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+                            {% endif %}{% endfor %}
+                            {% endcapture %}
+                            {{ tags | split:'</a>' | sort | join:'</a>' }}
+                        </div>
+                    {% endif %}
+
+                    {% if site.disqus_username %}
+                    <!-- disqus 评论框 start -->
+                    <div class="comment">
+                        <div id="disqus_thread" class="disqus-thread"></div>
+                    </div>
+                    <!-- disqus 评论框 end -->
+                    {% endif %}
+    
+                    {% if site.netease_comment %}
+                    <!-- 网易云跟帖 评论框 start -->
+                    <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+                    <!-- 网易云跟帖 评论框 end -->
+                    {% endif %}
+
+                </section>
+                {% endif %}
+
+                {% if page.sns %}
+                <section>
+                    <!-- SNS Link -->
+                    {% include sns-links.html center=true %}
+                    <p class="copyright text-muted">
+                            Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+                            <br>
+                            Powered by <a href="http://tokenian.me">唐大侠的博客</a> |
+                            <iframe
+                                style="margin-left: 2px; margin-bottom:-5px;"
+                                frameborder="0" scrolling="0" width="100px" height="20px"
+                                src="https://ghbtns.com/github-btn.html?user=tokenian&repo=tokenian.github.io&type=star&count=true" >
+                            </iframe>
+                    </p>
+                </section>
+                {% endif %}
+            </div>
+    </div>
+
+
+<!-- add support for mathjax by voleking-->
+{% if page.mathjax %}
+  {% include mathjax_support.html %}
+{% endif %}
+
+{% if site.netease_comment %}
+<!-- 网易云跟帖JS代码 start -->
+<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+<script>
+  var cloudTieConfig = {
+    url: document.location.href, 
+    sourceId: "",
+    productKey: "de25fc98a6fe48b3bc8a7ae765da99a0",
+    target: "cloud-tie-wrapper"
+  };
+  var yunManualLoad = true;
+  Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
+</script>
+<!-- 网易云跟帖JS代码 end -->
+{% endif %}
+
+
+{% if site.disqus_username %}
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "{{site.disqus_username}}";
+    var disqus_identifier = "{{page.id}}";
+    var disqus_url = "{{site.url}}{{page.url}}";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+{% endif %}
+
+{% if site.anchorjs %}
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'right',
+          // icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+{% endif %}
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+</body>
+
+{% include footer_reveal.html %}
+
+</html>
