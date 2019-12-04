@@ -8,6 +8,7 @@ header-img: "img/home-bg-f.jpg"
 tags:
   - study
   - life
+  - philosophy
 ---
 
 ### 小孩
