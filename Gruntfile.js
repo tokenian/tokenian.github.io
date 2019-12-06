@@ -7,6 +7,10 @@ module.exports = function(grunt) {
             main: {
                 src: 'js/<%= pkg.name %>.js',
                 dest: 'js/<%= pkg.name %>.min.js'
+            },
+            reveal: {
+                src: 'js/reveal.js',
+                dest: 'js/reveal.min.js'
             }
         },
         less: {
@@ -28,6 +32,17 @@ module.exports = function(grunt) {
                 }
             }
         },
+        cssmin: {
+            target: {
+              files: [{
+                expand: true,
+                cwd: 'css',
+                src: ['*.css', '!*.min.css',"!hux-blog.css"],
+                dest: 'css',
+                ext: '.min.css'
+              }]
+            }
+        },          
         banner: '/*!\n' +
             ' * <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
             ' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
@@ -66,8 +81,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-banner');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     // Default task(s).
-    grunt.registerTask('default', ['uglify', 'less', 'usebanner']);
+    grunt.registerTask('default', ['uglify', 'cssmin', 'less', 'usebanner']);
 
 };

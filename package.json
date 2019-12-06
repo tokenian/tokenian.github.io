@@ -1,25 +1,26 @@
 {
     "name": "hux-blog",
-    "title": "Hux Blog",
-    "author": "Hux <huxpro@gmail.com>",
+    "title": "tokenian Blog",
+    "author": "tokenian <tangxc1987@126.com>",
     "version": "1.8.2",
-    "homepage": "http://huxpro.github.io",
+    "homepage": "http://tokenian.github.io",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Huxpro/huxpro.github.io"
+        "url": "https://github.com/tokenian/tokenian.github.io"
     },
-    "bugs": "https://github.com/Huxpro/huxpro.github.io/issues",
+    "bugs": "https://github.com/tokenian/tokenian.github.io/issues",
     "devDependencies": {
         "grunt": "~0.4.5",
-        "grunt-contrib-less": "~0.11.4",
-        "grunt-contrib-watch": "~0.6.1",
         "grunt-banner": "~0.2.3",
-        "grunt-contrib-uglify": "~0.5.1"
+        "grunt-contrib-cssmin": "^3.0.0",
+        "grunt-contrib-less": "~0.11.4",
+        "grunt-contrib-uglify": "~0.5.1",
+        "grunt-contrib-watch": "~0.6.1"
     },
     "scripts": {
-        "start" : "jekyll serve -w -l --host 0.0.0.0 --port 4000",
-        "dev"   : "grunt watch & npm run start",
-        "boil"  : "git push boilerplate boilerplate:master",
-        "push"  : "git push origin master --tag"
+        "start": "jekyll serve -w -l --host 0.0.0.0 --port 4000",
+        "dev": "grunt watch & npm run start",
+        "boil": "git push boilerplate boilerplate:master",
+        "push": "git push origin master --tag"
     }
 }

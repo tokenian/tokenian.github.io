@@ -3,6 +3,7 @@ title: "降智的时代"
 subtitle: "娱乐至死的后果就是集体降智"
 # header-style: text
 header-img: "img/home-bg-f.jpg"
+layout: "post"
 tags:
   - think
   - life
