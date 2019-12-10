@@ -38,6 +38,12 @@
         ]
     });
     Reveal.configure({ transition: 'convex'});
+    Reveal.addEventListener('begin', function() {
+        console.log("you can write a callback named begin to execute when the slides open!");
+        if(begin){
+            begin();
+        }
+    } );
 </script>
 
 <!-- async load function -->
