@@ -574,7 +574,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
   font-size: 16px;
-  color: #404040;
+  color: rgba(255, 255, 255, 0.8);
   overflow-x: hidden;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -621,7 +621,7 @@ article {
   overflow: hidden;
 }
 blockquote {
-  color: gray;
+  color: gray-light;
   font-style: italic;
   font-size: 0.95em;
   margin: 20px 0 20px;
@@ -692,11 +692,12 @@ samp {
   margin-bottom: 15px;
 }
 .post-container a {
-  color: #337ab7;
+  color: #b5aa20;
+  font-weight: bold;
 }
 .post-container a:hover,
 .post-container a:focus {
-  color: #0085A1;
+  color: #a18700;
 }
 .post-container h1,
 .post-container h2,
@@ -1170,12 +1171,12 @@ samp {
   }
 }
 .post-preview > a {
-  color: #404040;
+  color: rgba(255, 255, 255, 0.8);
 }
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #0085A1;
+  color: #ccc;
 }
 .post-preview > a > .post-title {
   font-size: 21px;
@@ -1222,10 +1223,10 @@ samp {
 .post-content-preview {
   font-size: 13px;
   font-style: italic;
-  color: #a3a3a3;
+  color: rgba(255, 255, 255, 0.8);
 }
 .post-content-preview:hover {
-  color: #0085A1;
+  color: #ccc;
 }
 @media only screen and (min-width: 768px) {
   .post-content-preview {
@@ -1261,11 +1262,11 @@ footer .copyright {
   margin-bottom: 0;
 }
 footer .copyright a {
-  color: #337ab7;
+  color: #ccc;
 }
 footer .copyright a:hover,
 footer .copyright a:focus {
-  color: #0085A1;
+  color: #eee;
 }
 .floating-label-form-group {
   font-size: 14px;

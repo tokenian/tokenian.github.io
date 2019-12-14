@@ -11,7 +11,7 @@ body {
   .sans-serif;
   font-size: 16px;
   // Hux mpdify to 16px (Mobile First), and increase to 20px while 768+ width
-  color: @gray-dark;
+  color: @white-faded;
   //-webkit-user-select:text; //对于 Blog 还是先不开启这句。
   overflow-x: hidden;
 
@@ -63,7 +63,7 @@ article {
   overflow: hidden;
 }
 blockquote {
-  color: gray;
+  color: gray-light;
   font-style: italic;
   font-size: 0.95em;
   margin: 20px 0 20px;
@@ -151,11 +151,12 @@ samp {
   a {
     // display: inline-block;
     // safari has bugs on word-break on inline elements.
-    color: #337ab7;
+    color: #b5aa20;
+    font-weight: bold;
     // different to @brand-primary
     &:hover,
     &:focus {
-      color: @brand-primary;
+      color: @yellow-light;
     }
   }
   h1,
@@ -622,11 +623,11 @@ samp {
 
 .post-preview {
   > a {
-    color: @gray-dark;
+    color: @white-faded;
     &:hover,
     &:focus {
       text-decoration: none;
-      color: @brand-primary;
+      color: @gray;
     }
     > .post-title {
       font-size: 21px;
@@ -679,9 +680,9 @@ samp {
 .post-content-preview {
   font-size: 13px;
   font-style: italic;
-  color: #a3a3a3;
+  color: @white-faded;
   &:hover {
-    color: @brand-primary;
+    color: @gray;
   }
   @media only screen and (min-width: 768px) {
     font-size: 14px;
@@ -719,11 +720,11 @@ footer {
     text-align: center;
     margin-bottom: 0;
     a {
-      color: #337ab7;
+      color:@gray;
       // different to @brand-primary
       &:hover,
       &:focus {
-        color: @brand-primary;
+        color: @gray-light;
       }
     }
   }

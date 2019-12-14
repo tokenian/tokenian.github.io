@@ -32,7 +32,7 @@ tags:
   <h5 class="fragment fade-up">秦国举行了声势浩大的阅兵仪式，意在向剩下的五国展示其军事实力。</h5>
   <h5 class="fragment fade-up">
     <br/>
-    <p>枪兵在前排昂首阔步，整齐划一</p>
+    <p>枪兵在前,昂首阔步，整齐划一</p>
     <p >其后是两匹马拉的战车，后面紧跟着重甲骑兵。。。</p>
     <p>秦王站在阅兵台上，意气风发，好不自在！</p>
   </h5>
@@ -152,6 +152,100 @@ tags:
     </h4>
 </section>
 <section data-transition="slide" class="left">
+    <h4>
+        <em>张三：</em>
+        <span>
+            纵使顿顿山珍海味，但臣劳心劳力，无心吃饭。如今落下了胃病，请大王准许臣病假。
+        </span>
+    </h4>
+    <h4 class="fragment fade-up">
+        <em>李四：</em>
+        <span>
+            大王，您赏赐给臣的佳丽三千臣也无福消受。臣每日在练兵场上挥汗如雨，晚上还要面对财狼虎豹。
+            就爬哪一天精尽人亡！不能再为大王效力。
+        </span>
+    </h4>
+    <h4 class="fragment fade-up">
+        <em>王五：（一把扑倒保住秦王大腿）</em>
+        <span>
+            大王的恩泽下臣无以为报，金山银海只能留给后代子孙，臣请求告老还乡！
+        </span>
+    </h4>
+</section>
+<section data-transition="slide" class="left">
+        <h4>
+                <em>赵六：</em>
+                <span>
+                    臣夜夜垂泪到天明，士兵们各个未娶妻，而臣至今独守空闺。每天996早已无心顾念其他，求大王赐我一死！
+                </span>
+        </h4>
+        <h4 class="fragment fade-up">
+            <em>赵高：</em>
+            <span>
+                放肆！尔等受了大王的高官厚禄，不思报效，反倒如此无赖！
+            </span>
+        </h4>
+        <h4 class="fragment fade-up">
+            <em>众人：</em>
+            <span>
+                请大王收回成命！
+            </span>
+        </h4>
+        <h4 class="fragment fade-up">
+            <em>秦王：</em>
+            <span>
+                小高，取我的三尺长剑来！
+            </span>
+        </h4>
+        <h4 class="fragment fade-up">
+            <em>赵高：</em>
+            <span>
+                大王不可再杀了。这已经不知是第几波提拔的军官了。
+            </span>
+        </h4>
+</section>
+<section data-transition="slide" class="left">
+    <h4>
+        <em>秦王：</em>
+        <span>
+            尔等皆不思忠君报国。留尔等何用！
+        </span>
+    </h4>
+    <h4 class="fragment fade-up">
+        <em>李四：</em>
+        <span>
+            996制度太过劳累了，上个月微臣去ICU躺了半个月才回来！
+        </span>
+    </h4>
+    <h4 class="fragment fade-up">
+        <em>张三：</em>
+        <span>
+            大王，下臣已经制定了攻打赵国的计划。请大王过目！
+        </span>
+    </h4>
+</section>
+<section data-transition="slide" class="left">
+    <h4>
+        <em>赵高：</em>
+        <span>
+            纵使顿顿山珍海味，但臣劳心劳力，无心吃饭。如今落下了胃病，请大王准许臣病假。
+        </span>
+    </h4>
+    <h4 class="fragment fade-up">
+        <em>秦王：</em>
+        <span>
+            大王，您赏赐给臣的佳丽三千臣也无福消受。臣每日在练兵场上挥汗如雨，晚上还要面对财狼虎豹。
+            就爬哪一天精尽人亡！不能再为大王效力。
+        </span>
+    </h4>
+    <h4 class="fragment fade-up">
+        <em>王五：（一把扑倒保住秦王大腿）</em>
+        <span>
+            大王的恩泽下臣无以为报，金山银海只能留给后代子孙，臣请求告老还乡！
+        </span>
+    </h4>
+</section>
+<section data-transition="slide" class="left">
   <script type="text/template">
   自由女神从未来穿越到秦国，向秦王讲述了世界和宇宙。秦王发出宣言，要一统宇宙。
   自由女神掏出ak47,射杀了秦王。威慑大臣，被拥立为新的女王。
@@ -168,10 +262,30 @@ tags:
   </script>
 </section>
 <section data-transition="slide" class="left">
- <script type="text/template">
-   ***荣耀***
-  赵高参透了生命的哲学，在漫长的时间里等待新时代的到来。当自由的思想终于在西方出现，他饮下了早已备好的毒酒。
-  </script>
+    <h3>
+        <em>公元1762年，卢梭发表了
+        <a href="https://zh.wikipedia.org/wiki/%E7%A4%BE%E4%BC%9A%E5%A5%91%E7%BA%A6%E8%AE%BA" target="_blank">社会契约论</a>
+        </em>
+    </h3>
+    <h5 class="fragment fade-up" style="color: darkkhaki;">
+        “人生而自由，却又无往不在枷锁之中。”
+    </h5>
+    <h4 class="fragment fade-up">
+        <em>赵高：</em>
+        <span>
+            新的时代已经来临，自由、平等、博爱！
+        </span>
+    </h4>
+    <h4 class="fragment fade-up">
+        <em>赵高：</em>
+        <span>
+            漫长的岁月何其乏味，就让我喝下这遗忘的毒酒解脱吧。
+        </span>
+    </h4>
+    <small class="fragment fade-up">公元1762年，赵高真正死亡。</small>
+    <h5 class="fragment fade-up">
+        <em>凡是过去，皆为序章！</em>
+    </h5>
 </section>
 <script type="text/javascript">
     function begin(){
