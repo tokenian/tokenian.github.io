@@ -919,7 +919,7 @@ samp {
   letter-spacing: 1px;
 }
 .navbar-custom .nav li a:active {
-  background: rgba(0, 0, 0, 0.12);
+  background: rgba(234, 241, 241, 0.12);
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
@@ -964,11 +964,11 @@ samp {
   color: #0085A1;
 }
 .navbar-custom.invert .nav li a {
-  color: #404040;
+  color: white;
 }
 .navbar-custom.invert .nav li a:hover,
 .navbar-custom.invert .nav li a:focus {
-  color: #0085A1;
+  color: #e4e4e4;
 }
 @media only screen and (min-width: 1170px) {
   .navbar-custom {
@@ -1045,7 +1045,7 @@ samp {
 .intro-header.style-text .tags a,
 .intro-header.style-text .tags .tag {
   border-color: #404040;
-  color: #404040;
+  color: rgba(255, 255, 255, 0.8);
 }
 .intro-header.style-text .tags a:hover,
 .intro-header.style-text .tags .tag:hover,
