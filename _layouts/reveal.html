@@ -59,9 +59,16 @@
 
                 {% if page.sns %}
                 <section>
+
+                    <!-- Thanks a coffee -->
+                    <h5 id="coffee">给唐大侠一杯咖啡</h5>
+                    <div class="short-about">
+                      <img src="{{site.sidebar-wexin}}" style="width: 150px;height: 200px;"/>
+                    </div>
+                    
                     <!-- SNS Link -->
                     {% include sns-links.html center=true %}
-                    <p class="copyright text-muted">
+                    <p class="copyright text-muted" style="color: #333;">
                             Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
                             <br>
                             Powered by <a href="http://tokenian.github.com">唐大侠的博客</a> |
