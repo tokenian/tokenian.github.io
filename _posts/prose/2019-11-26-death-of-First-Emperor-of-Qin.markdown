@@ -29,7 +29,7 @@ tags:
 <section data-transition="slide">
   <h3><em>公元前229年，秦灭韩国</em></h3>
 
-  <h5 class="fragment fade-up">秦国举行了声势浩大的阅兵仪式，意在向剩下的五国展示其军事实力。</h5>
+  <h5 class="fragment fade-up">秦国举行了声势浩大的阅兵仪式，意在向其余五国展示其军事实力。</h5>
   <h5 class="fragment fade-up">
     <br/>
     <p>枪兵在前,昂首阔步，整齐划一</p>
@@ -83,7 +83,7 @@ tags:
     <h4 class="fragment fade-up">
         <em>秦王：</em>
         <span>
-            王翦何在？蒙骜何在？蒙恬何在？
+            王翦何在？尉缭何在？李斯何在？
         </span>
     </h4>
     <h4 class="fragment fade-up">
