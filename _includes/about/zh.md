@@ -8,15 +8,17 @@
 
 使用过.Net C# MVC 开发过常规的后台管理系统
 
-使用Nodejs 开发过中介网站的前后台，聊天系统
+使用Nodejs 开发过房产中介网站的前后台，聊天系统
 
 使用python爬过房产数据，越过长城和高山，学习了机器学习和神经网络。jupyter-notebook, tensorflow, pytorch, keras. GAN/Autoencoder...
 
-使用Java 开发常规管理系统，使用spring cloud开发高并发系统后台。
+使用Java开发常规管理系统，使用spring cloud开发高并发系统后台。
 
 手撸Linux脚本，编写油猴脚本破解某网站vip限制，手写shell脚本定期让局域网瘫痪。
 
-前端js/css/html, 使用过jQuery/angular/vue/echarts/zepto/less/seajs/requirejs/. PC端各浏览器的适配，移动端各个手机的适配。微信，浏览器，公众号。。。
+前端js/css/html, 使用过jQuery/angular/vue/uniapp/echarts/zepto/less/seajs/requirejs/. PC端各浏览器的适配，移动端各个手机的适配。微信，浏览器，公众号，小程序。。。
+
+最近在学习Qt
 
 研读过开源软件的代码，发觉也不过如此，如果。。。
 
