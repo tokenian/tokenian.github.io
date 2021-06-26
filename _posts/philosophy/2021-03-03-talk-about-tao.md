@@ -12,7 +12,7 @@ tags:
 
 > 道可道也，非恒道也。名可名也，非恒名也。无名，万物之始也；有名，万物之母也。故恒无欲也，以观其眇；恒有欲也，以观其所徼。两者同出，异名同谓。玄之又玄，众眇之门。
 
-![image-20210626182041874](https://gitee.com/tokenian/images-bed/raw/master/img/image-20210626182041874.png)
+<img src="https://gitee.com/tokenian/images-bed/raw/master/img/image-20210626191141170.png" alt="image-20210626191141170" style="zoom:50%;" />
 
 老子道德经理花了不少篇章来描述道，恍兮惚兮，其中有光。道德经里谈了政治、军事、宇宙、养生很多方面，有春秋那个时代的历史痕迹，比如诸侯混战，民不聊生。
 
