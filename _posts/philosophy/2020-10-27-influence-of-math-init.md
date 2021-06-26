@@ -7,6 +7,7 @@ author: "tokenian"
 header-img: "img/post-bg-infinity.jpg"
 tags:
   - life
+  - math
   - philosophy
 ---
 
