@@ -72,7 +72,7 @@ netease_comment: false
 # ba_track_id: [your track id]
 
 # Google Analytics
-ga_track_id: 'UA-151746204-1'            # Format: UA-xxxxxx-xx
+ga_track_id: 'G-QWRN5GB14R'            # Format: UA-xxxxxx-xx
 ga_domain: auto
 
 
