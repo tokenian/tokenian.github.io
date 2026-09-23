@@ -81,7 +81,8 @@ ga_domain: auto
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "一切有为法，如梦幻泡影，<br/>如露亦如电，应作如是观"
 sidebar-avatar: /img/my-sword.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
-sidebar-wexin: /img/weixin-money.png
+sidebar-wexin: /img/wx_money.png
+sitebar-alipay: /img/alipay_money.png
 
 
 # Featured Tags
