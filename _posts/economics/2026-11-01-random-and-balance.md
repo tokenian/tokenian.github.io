@@ -14,9 +14,9 @@ tags:
 
 最近在聚宽平台上用一个很保守的策略做了个模拟实验，它从 10月22号用指标选了5只股票，以十万元的本金，分成五份，买入5只股票。每天会重新计算沪深300符合指标的股票，如果现有的股票不满足指标则剔除，新满足的买入。最近这段时间它一直没有调仓,也就是目前的持股依然满足指标。
 
-![持仓](/Users/tangxiao/Documents/tokenian.github.io/img/posts/hs300-strategy.png)
+![持仓](/img/posts/hs300-strategy.png)
 
-![日志](/Users/tangxiao/Documents/tokenian.github.io/img/posts/hs300debug.png)
+![日志](/img/posts/hs300debug.png)
 
 因为最近大A受美股AI泡沫破裂的牵连，AI相关的股票集体雪崩。没有红几天，大多数时候是4000家下跌的行情。惨绝人寰、哀鸿遍野，今年赚钱的能有几个呢。
 
